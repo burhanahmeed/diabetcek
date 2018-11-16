@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-express-vuetify-boilerplate",
+  "name": "DiabetCek",
   "version": "1.0.0",
-  "description": "Nuxt.js + Express boilerplate with Vuetify component framework",
-  "author": "Danijel Martinek <danijel.martinek.4@gmail.com>",
+  "description": "Deteksi Diabetes",
+  "author": "DiabetCek Team",
   "private": true,
   "scripts": {
     "dev": "backpack dev",
