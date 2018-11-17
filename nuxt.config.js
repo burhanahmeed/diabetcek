@@ -20,7 +20,6 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins' }
     ],
     script: [
-      { src: '/serviceworker.js' }
     ]
   },
   /*
@@ -62,7 +61,7 @@ module.exports = {
   ],
   workbox: {
     importScripts: [
-        'custom-sw.js'
+        'serviceworker.js'
     ],
   }
   

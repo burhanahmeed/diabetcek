@@ -14,15 +14,15 @@
           <div class="card-team"  v-for="team in teams">
             <img src="/person.png" style="height: 70px;" alt="gambar">
             <h5>{{team.nama}}</h5>
-            <p><span class="profile-txt">Web Application</span></p>
-            <p><span class="profile-txt"><a href="mailto:burhanahmeed@gmail.com">Email</a></span></p>
+            <p><span class="profile-txt">{{team.title}}</span></p>
+            <p><span class="profile-txt"><a :href="`mailto:${team.email}`">Email</a></span></p>
           </div>
         </div>
     	</div>
     </div>
 </template>
 
-<style type="text/css">
+<style scoped>
 	.profile-txt {
 		font-size: 10px;
 	}
@@ -48,7 +48,7 @@
 	}
 	.team {
 		/*padding: 20px;*/
-    margin-bottom: 80px;
+    padding-bottom: 80px;
 	}
 	.card-team {
 		background-color: white;
@@ -59,7 +59,7 @@
 		display: inline-block;
 		margin: 10px;
 		margin-bottom: 40px;
-		max-width: 150px;
+		width: 150px;
 		text-align: center;
 	}
   .scrolling {
@@ -80,14 +80,14 @@ export default {
           email: 'burhanahmeed@gmail.com'
         },
         {
-          nama: 'Burhanuddin Ahmed',
-          title: 'Web Application',
-          email: 'burhanahmeed@gmail.com'
+          nama: 'S. Alpharizi',
+          title: 'Machine Learning',
+          email: 'septian@gmail.com'
         },
         {
-          nama: 'Burhanuddin Ahmed',
-          title: 'Web Application',
-          email: 'burhanahmeed@gmail.com'
+          nama: 'Gamal Akbar',
+          title: 'Machine Learning',
+          email: 'gamaltn@gmail.com'
         }
       ]
     }
