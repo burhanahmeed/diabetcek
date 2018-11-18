@@ -50,7 +50,7 @@ module.exports = {
     /*
   ** Load Vuetify into the app
   */
-  plugins: ['~/plugins/vuetify'],
+  plugins: ['~/plugins/vuetify.js'],
   /*
   ** Load Vuetify CSS globally
   */
