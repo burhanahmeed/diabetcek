@@ -50,7 +50,11 @@ module.exports = {
     /*
   ** Load Vuetify into the app
   */
-  plugins: ['~/plugins/vuetify.js'],
+  plugins: [
+    '~/plugins/vuetify.js',
+    '~/plugins/google-maps'
+    // '~/plugins/custom-marker'
+  ],
   /*
   ** Load Vuetify CSS globally
   */

@@ -100,7 +100,7 @@
                           type="number"
                           color="green"
                           hint="2-Hour serum insulin"
-                          v-model="insulim"
+                          v-model="insulin"
                           :rules="insulinRules"
                         ></v-text-field>
                        </v-form>
@@ -152,6 +152,10 @@
         height: null,
         weight: null,
         skinthick: null,
+        age: null,
+        glukose: null,
+        bloodpress: null,
+        insulin: null,
         // ------------rules-----------
         sexRules: [
           v => !!v || 'Sex is required'
