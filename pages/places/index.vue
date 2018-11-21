@@ -28,7 +28,10 @@
 	        	</div>
 	        	<div class="list">
 	        		<div class="scrolling">
-	        			<div style="cursor: pointer;" v-for="item in loc" class="block">
+                <div @click="nearby" v-if="loc===null" class="btn-srch">
+                  <span>Search Nearby</span>
+                </div>
+	        			<div v-if="loc!==null" style="cursor: pointer;" v-for="item in loc" class="block">
                   <div @click="locClick(item)">
                     <img src="/hos.png">
                     <h5>{{item.name}}</h5>
@@ -166,6 +169,16 @@ export default {
 	  max-width: 992px;
 	  width: 100%;
 	}
+  .btn-srch{
+    background-color: #009688;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 10px;
+    box-shadow: 1px 7px 8px -3px #888888;
+    cursor: pointer;
+    margin: 15px auto;
+  }
 </style>
 
 
