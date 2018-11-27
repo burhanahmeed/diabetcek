@@ -20,7 +20,7 @@
       <GmapMarker
       :key="index"
       v-for="(m, index) in loc"
-      :position="{lat:m.geometry.viewport.l.j, lng:m.geometry.viewport.j.l}"
+      :position="{lat:m.geometry.location.lat(), lng:m.geometry.location.lng()}"
       :icon="{ url: require('../../static/mhos.png')}" />
 
       </gmap-map>
@@ -76,6 +76,7 @@ export default {
           lat: position.coords.latitude,
           lng: position.coords.longitude
         }
+        this.nearby()
       })
     },
     nearby: function () {
@@ -106,8 +107,8 @@ export default {
     },
     locClick (item) {
       this.center = {
-        lat: item.geometry.viewport.l.j,
-        lng: item.geometry.viewport.j.l
+        lat: item.geometry.location.lat(),
+        lng: item.geometry.location.lng()
       }
     }
   }

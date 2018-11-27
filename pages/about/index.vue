@@ -4,9 +4,9 @@
       		<h3>About DiabetCek</h3>
       	</div>
       	<div class="card">
-    		<p>DiabetCek is a Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    		<p>DiabetCek is an application that serves to help diagnose diabetes from the start. DiabetCek uses machine learning API from Tensorflow and this app mainly build with Vuejs + Nuxtjs.</p>
     	</div>
-    	<div class="team">
+    	<!-- <div class="team">
     		<div style="margin: 10px;">
     			<h4>Team</h4>
     		</div>
@@ -18,7 +18,17 @@
             <p><span class="profile-txt"><a :href="`mailto:${team.email}`">Email</a></span></p>
           </div>
         </div>
-    	</div>
+    	</div> -->
+      <div class="team">
+        <div style="margin: 10px;">
+          <h4>Team</h4>
+        </div>
+        <div class="scrolling" style="text-align: center;">
+          <div class="card-team-alternate">
+            <span>Institut Teknologi Sepuluh Nopember Team</span>
+          </div>
+        </div>
+      </div>
     </div>
 </template>
 
@@ -34,6 +44,9 @@
 /*		-webkit-box-shadow: 0px -4px 12px -8px #000000; 
 		box-shadow: 0px -4px 12px -8px #000000;*/
 	}
+  .card p{
+    color: #7e7e7e;
+  }
 	h3, h5, h4, p, span {
 		font-family: 'Poppins', sans-serif;
 	}
@@ -62,6 +75,17 @@
 		width: 150px;
 		text-align: center;
 	}
+  .card-team-alternate {
+    background-color: white;
+    -webkit-box-shadow: 0px -4px 12px -8px #000000; 
+    box-shadow: 0px -4px 12px -8px #000000;
+    border-radius: 10px;
+    padding: 15px;
+    display: inline-block;
+    margin: 5px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
   .scrolling {
       overflow-x: scroll;
   overflow-y: hidden;

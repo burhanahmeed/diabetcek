@@ -32,6 +32,7 @@ module.exports = {
   build: {
     vendor: ['axios'],
     vendor: ['vuetify'],
+    vendor: ['@tensorflow/tfjs'],
     extractCSS: true,
     /*
     ** Run ESLINT on save
