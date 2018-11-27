@@ -246,8 +246,8 @@
         if (this.form1valid && this.form2valid && this.form3valid) {
           this.runML()
         } else {
-          // this.dialog = true
-          this.runML()
+          this.dialog = true
+          // this.runML()
         }
       },
       runML () {
@@ -265,10 +265,10 @@
           // var output = model.predict(tf.tensor2d(['12', '90', '', '', '', '', '', ''], [1, 8]))
           // console.log(output.print())
           // console.log(tf.tensor2d([parseFloat(this.pregnancy), parseFloat(this.glukose), parseFloat(this.bloodpress), parseFloat(this.skinthick), parseFloat(this.insulin), parseFloat(this.bmi), 0.19, parseFloat(this.age)], [1, 8]).print())
-          console.log(Array.from(output.dataSync())[0])
+          // console.log(Array.from(output.dataSync())[0])
           this.$router.push({
             name: 'result',
-            params: {diagnose: 0.88}
+            params: {diagnose: Array.from(output.dataSync())[0]}
           })
         })
       }
