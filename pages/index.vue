@@ -259,7 +259,7 @@
         // console.log(tf.tensor2d([1, 0, 1, 0, 1, 0, 1, 0, 1], [9, 1], 'int32').print())
         // this.model.save('downloads://diabet-model')
         // console.log('saving done')
-        tf.loadModel('http://localhost:3000/model/model.json').then(model => {
+        tf.loadModel('/model/model.json').then(model => {
           // var output = model.predict(tf.tensor([[1, 88, 30, 42, 99, 55, 0.496, 26]]))
           var output = model.predict(tf.tensor2d([parseFloat(this.pregnancy), parseFloat(this.glukose), parseFloat(this.bloodpress), parseFloat(this.skinthick), parseFloat(this.insulin), parseFloat(this.bmi), 0.19, parseFloat(this.age)], [1, 8]))
           // var output = model.predict(tf.tensor2d(['12', '90', '', '', '', '', '', ''], [1, 8]))
