@@ -5,7 +5,7 @@
   "author": "DiabetCek Team",
   "private": true,
   "engines": {
-    "node": ">=8.11.2"
+    "node": "8.11.2"
   },
   "scripts": {
     "dev": "backpack dev",
