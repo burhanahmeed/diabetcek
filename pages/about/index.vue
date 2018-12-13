@@ -6,7 +6,7 @@
       	<div class="card">
     		<p>DiabetCek is an application that serves to help diagnose diabetes from the start. DiabetCek uses machine learning API from Tensorflow and this app mainly build with Vuejs + Nuxtjs.</p>
     	</div>
-    	<!-- <div class="team">
+    	<div class="team">
     		<div style="margin: 10px;">
     			<h4>Team</h4>
     		</div>
@@ -18,17 +18,7 @@
             <p><span class="profile-txt"><a :href="`mailto:${team.email}`">Email</a></span></p>
           </div>
         </div>
-    	</div> -->
-      <div class="team">
-        <div style="margin: 10px;">
-          <h4>Team</h4>
-        </div>
-        <div class="scrolling" style="text-align: center;">
-          <div class="card-team-alternate">
-            <span>Institut Teknologi Sepuluh Nopember Team</span>
-          </div>
-        </div>
-      </div>
+    	</div>      
     </div>
 </template>
 
