@@ -4,9 +4,6 @@
   "description": "Deteksi Diabetes",
   "author": "DiabetCek Team",
   "private": true,
-  "engines": {
-    "node": "8.11.2"
-  },
   "scripts": {
     "dev": "backpack dev",
     "build": "nuxt build && backpack build",
