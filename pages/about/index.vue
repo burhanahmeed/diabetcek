@@ -4,7 +4,7 @@
       		<h3>About DiabetCek</h3>
       	</div>
       	<div class="card">
-    		<p>DiabetCek is a Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    		<p>DiabetCek is an application that serves to help diagnose diabetes from the start. DiabetCek uses machine learning API from Tensorflow and this app mainly build with Vuejs + Nuxtjs.</p>
     	</div>
     	<div class="team">
     		<div style="margin: 10px;">
@@ -14,15 +14,15 @@
           <div class="card-team"  v-for="team in teams">
             <img src="/person.png" style="height: 70px;" alt="gambar">
             <h5>{{team.nama}}</h5>
-            <p><span class="profile-txt">Web Application</span></p>
-            <p><span class="profile-txt"><a href="mailto:burhanahmeed@gmail.com">Email</a></span></p>
+            <p><span class="profile-txt">{{team.title}}</span></p>
+            <p><span class="profile-txt"><a :href="`mailto:${team.email}`">Email</a></span></p>
           </div>
         </div>
     	</div>
     </div>
 </template>
 
-<style type="text/css">
+<style scoped>
 	.profile-txt {
 		font-size: 10px;
 	}
@@ -34,6 +34,9 @@
 /*		-webkit-box-shadow: 0px -4px 12px -8px #000000; 
 		box-shadow: 0px -4px 12px -8px #000000;*/
 	}
+  .card p{
+    color: #7e7e7e;
+  }
 	h3, h5, h4, p, span {
 		font-family: 'Poppins', sans-serif;
 	}
@@ -48,7 +51,7 @@
 	}
 	.team {
 		/*padding: 20px;*/
-    margin-bottom: 80px;
+    padding-bottom: 80px;
 	}
 	.card-team {
 		background-color: white;
@@ -57,11 +60,22 @@
 		border-radius: 10px;
 		padding: 15px;
 		display: inline-block;
-		margin: 10px;
+		margin: 5px;
 		margin-bottom: 40px;
-		max-width: 150px;
+		width: 150px;
 		text-align: center;
 	}
+  .card-team-alternate {
+    background-color: white;
+    -webkit-box-shadow: 0px -4px 12px -8px #000000; 
+    box-shadow: 0px -4px 12px -8px #000000;
+    border-radius: 10px;
+    padding: 15px;
+    display: inline-block;
+    margin: 5px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
   .scrolling {
       overflow-x: scroll;
   overflow-y: hidden;
@@ -80,14 +94,14 @@ export default {
           email: 'burhanahmeed@gmail.com'
         },
         {
-          nama: 'Burhanuddin Ahmed',
-          title: 'Web Application',
-          email: 'burhanahmeed@gmail.com'
+          nama: 'S. Alpharizi',
+          title: 'Machine Learning',
+          email: 'septian@gmail.com'
         },
         {
-          nama: 'Burhanuddin Ahmed',
-          title: 'Web Application',
-          email: 'burhanahmeed@gmail.com'
+          nama: 'Gamal Akbar',
+          title: 'Machine Learning',
+          email: 'gamaltn@gmail.com'
         }
       ]
     }

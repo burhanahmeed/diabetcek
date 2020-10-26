@@ -20,7 +20,6 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins' }
     ],
     script: [
-      { src: '/serviceworker.js' }
     ]
   },
   /*
@@ -33,6 +32,7 @@ module.exports = {
   build: {
     vendor: ['axios'],
     vendor: ['vuetify'],
+    vendor: ['@tensorflow/tfjs'],
     extractCSS: true,
     /*
     ** Run ESLINT on save
@@ -51,7 +51,11 @@ module.exports = {
     /*
   ** Load Vuetify into the app
   */
-  plugins: ['~/plugins/vuetify'],
+  plugins: [
+    '~/plugins/vuetify.js',
+    '~/plugins/google-maps'
+    // '~/plugins/custom-marker'
+  ],
   /*
   ** Load Vuetify CSS globally
   */
@@ -62,7 +66,7 @@ module.exports = {
   ],
   workbox: {
     importScripts: [
-        'custom-sw.js'
+        'serviceworker.js'
     ],
   }
   

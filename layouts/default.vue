@@ -9,6 +9,7 @@
           :value="true"
           fixed
           color="white"
+          class="custom"
         >
           <v-btn
             color="teal"
@@ -56,5 +57,11 @@ export default {
 <style scoped>
   span {
     font-family: 'Poppins', sans-serif;
+  }
+  .custom {
+    box-shadow: none;
+    border-top: 2px #1e824c solid !important;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
   }
 </style>
