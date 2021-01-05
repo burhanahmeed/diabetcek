@@ -15,7 +15,7 @@
   "dependencies": {
     "@nuxtjs/pwa": "^2.6.0",
     "@tensorflow/tfjs": "^0.13.5",
-    "axios": "^0.16.2",
+    "axios": "^0.21.1",
     "body-parser": "^1.17.2",
     "cookie-parser": "^1.4.3",
     "cross-env": "^5.0.1",
