@@ -21,7 +21,7 @@
     "cross-env": "^5.0.1",
     "express": "^4.15.3",
     "express-session": "^1.15.3",
-    "nuxt": "^1.0.0-rc3",
+    "nuxt": "^3.0.0",
     "nuxt-oauth": "^0.0.2",
     "passport": "^0.3.2",
     "passport-strava": "latest",
