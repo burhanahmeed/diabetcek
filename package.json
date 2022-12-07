@@ -19,7 +19,7 @@
     "body-parser": "^1.17.2",
     "cookie-parser": "^1.4.3",
     "cross-env": "^5.0.1",
-    "express": "^4.15.3",
+    "express": "^4.17.3",
     "express-session": "^1.15.3",
     "nuxt": "^1.0.0-rc3",
     "nuxt-oauth": "^0.0.2",
